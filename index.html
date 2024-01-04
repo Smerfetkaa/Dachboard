@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar__logo--mobile">
+        <svg><use href="/img/symbol-defs.svg#icon-setting"></use></svg>
+      </div>
+      <aside class="sidebar hidden">
+        <div>
+          <div class="sidebar__logo">
+            <svg><use href="/img/symbol-defs.svg#icon-setting"></use></svg>
+            <span class="sidebar__logo--big"
+              >Dashboard <span class="sidebar__logo--small">v.01</span></span
+            >
+          </div>
+          <ul class="sidebar__menu">
+            <li class="sidebar__menu__item">
+              <a>
+                <span class="sidebar__menu__item__name">
+                  <svg class="sidebar__menu__item__icon">
+                    <use href="/img/symbol-defs.svg#icon-key-square"></use>
+                  </svg>
+                  Dashboard
+                </span>
+              </a>
+            </li>
+            <li class="sidebar__menu__item">
+              <a>
+                <span class="sidebar__menu__item__name">
+                  <svg class="sidebar__menu__item__icon">
+                    <use href="/img/symbol-defs.svg#icon-d-square"></use>
+                  </svg>
+                  Product</span
+                >
+                <svg class="sidebar__chevron">
+                  <use href="/img/symbol-defs.svg#icon-chevron-right"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sidebar__menu__item sidebar__menu__item--active">
+              <a
+                ><span class="sidebar__menu__item__name"
+                  ><svg class="sidebar__menu__item__icon">
+                    <use href="/img/symbol-defs.svg#icon-user-square"></use>
+                  </svg>
+                  Customers</span
+                >
+                <svg class="sidebar__chevron">
+                  <use href="/img/symbol-defs.svg#icon-chevron-right"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sidebar__menu__item">
+              <a>
+                <span class="sidebar__menu__item__name"
+                  ><svg class="sidebar__menu__item__icon">
+                    <use href="/img/symbol-defs.svg#icon-wallet-money"></use>
+                  </svg>
+                  Income</span
+                >
+                <svg class="sidebar__chevron">
+                  <use href="/img/symbol-defs.svg#icon-chevron-right"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sidebar__menu__item">
+              <a
+                ><span class="sidebar__menu__item__name">
+                  <svg class="sidebar__menu__item__icon">
+                    <use href="/img/symbol-defs.svg#icon-discount-shape"></use>
+                  </svg>
+                  Promote</span
+                >
+                <svg class="sidebar__chevron">
+                  <use href="/img/symbol-defs.svg#icon-chevron-right"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sidebar__menu__item">
+              <a>
+                <span class="sidebar__menu__item__name">
+                  <svg class="sidebar__menu__item__icon">
+                    <use
+                      href="/img/symbol-defs.svg#icon-message-question"
+                    ></use>
+                  </svg>
+                  Help</span
+                >
+                <svg class="sidebar__chevron">
+                  <use href="/img/symbol-defs.svg#icon-chevron-right"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__user">
+          <img src="./img/Ellipse 8.png" alt="userAvatar" />
+          <div>
+            <p class="sidebar__user__name">Evano</p>
+            <p class="sidebar__user__job-title">Project Manager</p>
+          </div>
+        </div>
+      </aside>
+      <main class="main-content">
+        <span class="welcome">Hello Evano 👋🏼,</span>
+        <div class="container">
+          <div class="container__header">
+            <div class="container__title">
+              <p class="container__title__main">All Customers</p>
+              <p class="container__title__second">Active Members</p>
+            </div>
+            <div class="container__search">
+              <input type="text" name="search" placeholder="Search" />
+            </div>
+          </div>
+          <div class="container__table__row container__table__row--first">
+            <p>Customer Name</p>
+            <p class="hidden">Company</p>
+            <p class="hidden">Phone Number</p>
+            <p class="hidden">Email</p>
+            <p class="hidden">Country</p>
+            <p>Status</p>
+          </div>
+          <div class="container__table">
+            <div class="container__table__row">
+              <p>Jane Cooper</p>
+              <p class="hidden">Microsoft</p>
+              <p class="hidden">(225) 555-0118</p>
+              <p class="hidden"> jane@microsoft.com</p>
+              <p class="hidden">United States</p>
+              <button
+                type="button"
+                class="container__table__btn container__table__btn--active"
+              >
+                Active
+              </button>
+            </div>
+            <div class="container__table__row">
+              <p>Floyd Miles</p>
+              <p class="hidden">Yahoo</p>
+              <p class="hidden">(205) 555-0100</p>
+              <p class="hidden">floyd@yahoo.com</p>
+              <p class="hidden">Kiribati</p>
+              <button type="button" class="container__table__btn">
+                Inactive
+              </button>
+            </div>
+            <div class="container__table__row">
+              <p>Ronald Richards</p>
+              <p class="hidden">Adobe</p>
+              <p class="hidden">(302) 555-0107</p>
+              <p class="hidden">ronald@adobe.com</p>
+              <p class="hidden">Israel</p>
+              <button type="button" class="container__table__btn">
+                Inactive
+              </button>
+            </div>
+            <div class="container__table__row">
+              <p>Marvin McKinney</p>
+              <p class="hidden">Tesla</p>
+              <p class="hidden">(252) 555-0126</p>
+              <p class="hidden">marvin@tesla.com</p>
+              <p class="hidden">Iran</p>
+              <button
+                type="button"
+                class="container__table__btn container__table__btn--active"
+              >
+                Active
+              </button>
+            </div>
+            <div class="container__table__row">
+              <p>Jerome Bell</p>
+              <p class="hidden">Google</p>
+              <p class="hidden">(629) 555-0129</p>
+              <p class="hidden">jerome@google.com</p>
+              <p class="hidden">Réunion</p>
+              <button
+                type="button"
+                class="container__table__btn container__table__btn--active"
+              >
+                Active
+              </button>
+            </div>
+            <div class="container__table__row">
+              <p>Kathryn Murphy</p>
+              <p class="hidden">Microsoft</p>
+              <p class="hidden">(406) 555-0120</p>
+              <p class="hidden">kathryn@microsoft.com</p>
+              <p class="hidden">Curaçao</p>
+              <button
+                type="button"
+                class="container__table__btn container__table__btn--active"
+              >
+                Active
+              </button>
+            </div>
+            <div class="container__table__row">
+              <p>Jacob Jones</p>
+              <p class="hidden">Yahoo</p>
+              <p class="hidden">(208) 555-0112</p>
+              <p class="hidden">jacob@yahoo.com</p>
+              <p class="hidden">Brazil</p>
+              <button
+                type="button"
+                class="container__table__btn container__table__btn--active"
+              >
+                Active
+              </button>
+            </div>
+            <div class="container__table__row">
+              <p>Kristin Watson</p>
+              <p class="hidden">Facebook</p>
+              <p class="hidden">(704) 555-0127</p>
+              <p class="hidden">kristin@facebook.com</p>
+              <p class="hidden">Åland Islands</p>
+              <button type="button" class="container__table__btn">
+                Inactive
+              </button>
+            </div>
+          </div>
+          <div class="container__footer">
+            <span>Showing data 1 to 8 of 256K entries</span>
+            <div class="container__footer__page">
+              <button class="container__footer__btn"><</button>
+              <button
+                class="container__footer__btn container__footer__btn--active"
+              >
+                1
+              </button>
+              <button class="container__footer__btn">2</button>
+              <button class="container__footer__btn">3</button>
+              <button class="container__footer__btn">4</button>
+              <span>...</span>
+              <button class="container__footer__btn">40</button>
+              <button class="container__footer__btn">></button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
